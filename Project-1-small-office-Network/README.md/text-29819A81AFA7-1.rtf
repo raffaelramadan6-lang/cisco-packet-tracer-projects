@@ -1,0 +1,88 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12720\viewh7800\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ## \uc0\u9989  Testing & Verification\
+\
+### **Test 1: Network Topology**\
+Complete network topology with all devices and connections:\
+\
+![Network Topology](screenshots/01-topology.png)\
+\
+*Two-department network with Sales VLAN 10 and IT VLAN 20, connected via Router-on-a-Stick configuration.*\
+\
+---\
+\
+### **Test 2: DHCP Functionality - Sales Department**\
+Sales PC successfully obtained IP via DHCP:\
+\
+![Sales PC IP Configuration](screenshots/02-sales-pc-ipconfig.png)\
+\
+**Verification:**\
+- \uc0\u9989  IP Address: 192.168.10.x (Sales VLAN)\
+- \uc0\u9989  Subnet Mask: 255.255.255.0\
+- \uc0\u9989  Default Gateway: 192.168.10.1\
+- \uc0\u9989  DNS Server: 192.168.20.2\
+\
+*This demonstrates successful DHCP pool configuration on the router and proper IP assignment to end devices.*\
+\
+---\
+\
+### **Test 3: Inter-VLAN Routing**\
+Sales PC successfully communicating with IT VLAN devices:\
+\
+![Sales Ping IT VLAN](screenshots/03-sales-ping-it-vlan.png)\
+\
+**Results:**\
+- \uc0\u9989  Sales VLAN (192.168.10.x) \u8594  IT VLAN (192.168.20.2)\
+- \uc0\u9989  4 packets sent, 4 received (0% packet loss)\
+- \uc0\u9989  Round-trip time < 2ms\
+\
+*This confirms Router-on-a-Stick inter-VLAN routing is functioning correctly, allowing communication between separate VLANs.*\
+\
+---\
+\
+### **Test 4: DHCP Functionality - IT Department**\
+IT PC successfully obtained IP via DHCP:\
+\
+![IT PC Configuration](screenshots/04-it-pc-ipconfig.png)\
+\
+**Verification:**\
+- \uc0\u9989  IP Address: 192.168.20.x (IT VLAN)\
+- \uc0\u9989  Subnet Mask: 255.255.255.0\
+- \uc0\u9989  Default Gateway: 192.168.20.1\
+- \uc0\u9989  DNS Server: 192.168.20.2\
+\
+*Confirms both DHCP pools (Sales and IT) are operational and providing correct network parameters.*\
+\
+---\
+\
+### **Test 5: VLAN Configuration Verification**\
+Switch VLAN configuration verified:\
+\
+![Switch VLAN Brief](screenshots/05-switch-vlan-brief.png)\
+\
+**Verification:**\
+- \uc0\u9989  VLAN 10 (Sales) - Active\
+- \uc0\u9989  VLAN 20 (IT) - Active\
+- \uc0\u9989  Ports correctly assigned to respective VLANs\
+- \uc0\u9989  Trunk port configured for router connection\
+\
+*This confirms proper VLAN segmentation at the switch level, ensuring traffic isolation between departments.*\
+\
+---\
+\
+### **Summary of Test Results**\
+\
+| Test | Component | Status |\
+|------|-----------|--------|\
+| DHCP - Sales VLAN | \uc0\u9989  | PASS |\
+| DHCP - IT VLAN | \uc0\u9989  | PASS |\
+| Inter-VLAN Routing | \uc0\u9989  | PASS |\
+| VLAN Configuration | \uc0\u9989  | PASS |\
+| Network Connectivity | \uc0\u9989  | PASS |\
+\
+**All tests passed successfully!** The network is fully functional with proper VLAN segmentation and inter-VLAN routing.}
