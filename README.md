@@ -23,16 +23,23 @@ A collection of network topology projects demonstrating Cisco networking concept
 
 ---
 
-### Project 2: Branch Office with WAN Connection (Coming Soon)
-**Difficulty:** Intermediate  
-**Status:** Planned
+### [Project 2: Branch Office with WAN Connection](./Project-2-Branch-Office-WAN)
+**Difficulty:** Intermediate to Advanced  
+**Completion Date:** December 2025
 
-**Will Demonstrate:**
-- WAN connectivity
-- Dynamic routing protocols (OSPF/EIGRP)
-- Access Control Lists (ACLs)
-- Site-to-site connectivity
+**Demonstrates:**
+- WAN connectivity (Serial DCE/DTE)
+- OSPF dynamic routing protocol
+- Multi-site network architecture
+- Router-on-a-Stick at multiple locations
+- Cross-site communication
+- Enterprise network design
 
+**Key Technologies:** OSPF, WAN, Serial Links, Multi-site VLANs, Dynamic Routing
+
+**Devices:** 2x Cisco 1841 Routers, 3x 2960 Switches, Multi-site topology
+
+[📂 View Project Details →](./Project-2-Branch-Office-WAN)
 ---
 
 ## 🎯 Learning Goals
