@@ -34,8 +34,12 @@ A collection of network topology projects demonstrating Cisco networking concept
 - Router-on-a-Stick at multiple locations
 - Cross-site communication
 - Enterprise network design
+- Configured two-site WAN network with OSPF dynamic routing
+- Implemented serial DCE/DTE WAN link
+- Verified cross-site connectivity and route learning
+- Documented advanced troubleshooting and configuration
 
-**Key Technologies:** OSPF, WAN, Serial Links, Multi-site VLANs, Dynamic Routing
+ **Key Technologies:** OSPF, WAN, Serial Links, Multi-site VLANs, Dynamic Routing
 
 **Devices:** 2x Cisco 1841 Routers, 3x 2960 Switches, Multi-site topology
 
@@ -66,7 +70,7 @@ A collection of network topology projects demonstrating Cisco networking concept
 ## 📈 Project Progress
 
 - ✅ Project 1: Small Office Network - **Completed**
-- 🔄 Project 2: Branch Office with WAN - **In Planning**
+- 🔄 Project 2: Branch Office with WAN - **Completed**
 - 📋 Project 3: Enterprise Network - **Planned**
 
 ---
